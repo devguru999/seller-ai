@@ -90,7 +90,8 @@ export async function requestChatStream(
   const tokens = (options?.token || "").split(",");
   let lastToken = localStorage.getItem(":latestToken");
   let lastTokenIndex = findIndex(tokens, v => v === lastToken);
-  let currentToken = tokens[lastTokenIndex + 1];
+  // let currentToken = tokens[lastTokenIndex + 1];
+  let currentToken = localStorage.getItem(":openaiKey");
 
   if (!currentToken) {
     currentToken = tokens[0];
