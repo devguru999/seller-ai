@@ -60,7 +60,7 @@ const links: Array<{
   canAddCollections: boolean;
   collectionsLabel: string;
 }> = [
-  { icon: IconBulb, label: "Assistant", key: "nullgpt", canAddCollections: true, collectionsLabel: "Prompt templates" },
+  { icon: IconBulb, label: "Amazon Seller Assistant", key: "nullgpt", canAddCollections: true, collectionsLabel: "Prompt templates" },
   // { icon: IconSettings, label: "Settings", key: "settings", canAddCollections: false, collectionsLabel: "Settings" },
 ];
 
@@ -145,7 +145,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
   const mainLinks = links.map(link => (
     <UnstyledButton key={link.label} className={classes.mainLink} onClick={() => setCurrentTool(link.key)}>
       <Text color={currentTool === link.key ? "blue" : "dimmed"} className={classes.mainLinkInner}>
-        <link.icon size={30} className={classes.mainLinkIcon} stroke={1.5} />
+        <link.icon size={20} className={classes.mainLinkIcon} stroke={1.5} />
         <span>{link.label}</span>
       </Text>
       {link.notifications && (

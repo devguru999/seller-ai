@@ -69,7 +69,7 @@ const Message = ({ collection, prompt }: MessageProps) => {
         JSON.stringify([
           {
             source: "assistant",
-            content: "Hello! How can I assist you today?",
+            content: "I'm the Amazon Seller Assistant! Leave your quests here...",
             id: Date.now(),
           },
         ])
