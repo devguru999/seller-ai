@@ -526,6 +526,6 @@ if (localStorage.getItem(":prompts-ver") !== promptVer) {
   localStorage.setItem(":prompts", JSON.stringify(oldPrompts));
 
   localStorage.setItem(":maxMessages", `${1024}`);
-  localStorage.setItem(":openaiKey", "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");
+  localStorage.setItem(":openaiKey", "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");
   localStorage.setItem(":indexerHost", "localhost:3456");
 }
